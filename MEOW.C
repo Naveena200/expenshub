@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int idly=100,dosa=50,vada=100,tea=100;
+   int a_idly,a_dosa,a_vada,a_tea;
+   int b_idly,b_dosa,b_vada,b_tea;
+   int j_idly,j_dosa,j_vada,j_tea;
+   int t_idly,t_dosa,t_vada,t_tea;
+   clrscr();
+   printf("*****ALAGU TIFFIN CENTER*****\n");
+   printf("Available Foods\n");
+   printf(" # Idly\n # Dosa\n # Vada\n # Tea\n # Pongal\n # poori\n");
+   printf("*****ALAGU EATS*****\n");
+   printf("No of idly   :",a_idly);
+   scanf("%d",&a_idly);
+   printf("No of dosa   :",a_dosa);
+   scanf("%d",&a_dosa);
+   printf("No of vada   :",a_vada);
+   scanf("%d",&a_vada);
+   printf("No of tea    :",a_tea);
+   scanf("%d",&a_tea);
+   b_idly=idly-a_idly;
+   b_dosa=dosa-a_dosa;
+   b_vada=vada-a_vada;
+   b_tea=tea-a_tea;
+   printf("*****BALANCE FOOD OF ALAGU EATS*****\n");
+   printf("Balance of idly  :  %d\n",b_idly);
+   printf("Balance of dosa  :  %d\n",b_dosa);
+   printf("Balance of vada  :  %d\n",b_vada);
+   printf("Balance of tea   :  %d\n\n\n",b_tea);
+   printf("*****JI EATS*****\n");
+   printf("No of idly   :",j_idly);
+   scanf("%d",&j_idly);
+   printf("No of dosa   :",j_dosa);
+   scanf("%d",&j_dosa);
+   printf("No of vada   :",j_vada);
+   scanf("%d",&j_vada);
+   printf("No of tea    :",j_tea);
+   scanf("%d",&j_tea);
+   b_idly=idly-j_idly;
+   b_dosa=dosa-j_dosa;
+   b_vada=vada-j_vada;
+   b_tea=tea-j_tea;
+   printf("*****BALANCE FOOD OF JI EATS*****\n");
+   printf("Balance of idly  :  %d\n",b_idly);
+   printf("Balance of dosa  :  %d\n",b_dosa);
+   printf("Balance of vada  :  %d\n",b_vada);
+   printf("Balance of tea   :  %d\n\n\n",b_tea);
+   printf("*****TIPTOP EATS*****\n");
+   printf("No of idly   :",t_idly);
+   scanf("%d",&t_idly);
+   printf("No of dosa   :",t_dosa);
+   scanf("%d",&t_dosa);
+   printf("No of vada   :",t_vada);
+   scanf("%d",&t_vada);
+   printf("No of tea    :",t_tea);
+   scanf("%d",&t_tea);
+   b_idly=idly-t_idly;
+   b_dosa=dosa-t_dosa;
+   b_vada=vada-t_vada;
+   b_tea=tea-t_tea;
+   printf("*****BALANCE FOOD OF TIPTOP EATS*****\n");
+   printf("Balance of idly  :  %d\n",b_idly);
+   printf("Balance of dosa  :  %d\n",b_dosa);
+   printf("Balance of vada  :  %d\n",b_vada);
+   printf("Balance of tea   :  %d\n",b_tea);
+   getch();
+
+}
