@@ -1,19 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
-int array[5];
-int n,i;
 void main()
 {
-  clrscr();
-  for(n=0;n<=4;n++)
-  {
-  printf("Enter the values for a[%d]:",n);
-  scanf("%d",&array[n]);
-  }
-  for(i=0;i<5;i++)
-  {
-  printf("a[%d] : %d \n",i, array[i]);
-  }
-
-  getch();
+int i,j,sub[3][3];
+clrscr();
+for(i=0;i<=7;i++)
+{
+for(j=0;i<=7;j++)
+{
+scanf("%d",&sub[i][j]);
+printf("The values are:%d\t",sub[i][j]);
+}
+printf("\n");
+}
 }
