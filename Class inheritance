@@ -1,0 +1,30 @@
+from datetime import date class Employee: 
+def init(self,name,dob,salary,gender,city): 
+self.name = name self.dob = dob 
+self.salary = salary 
+self.gender = gender 
+self.city = city
+
+def address(self):
+    addr = f'Name : {self.name}\nDOB : {self.dob}\nSalary : {self.salary}\nCity : {self.city}\nGender = {self.gender}'
+    return addr
+
+
+def age(self):
+    current_year=date.today().year
+    return current_year - self.dob
+
+@classmethod
+def current_salary(cls,sal):
+    cls.sal=sal
+    
+@classmethod
+def emp_data(cls,data):
+    name,dob,salary,genter,city = data.split(',')
+    return cls(name,dob,salary,genter,city)
+emp1=Employee('Naveena',1999,30000,'Female','madhurai') 
+emp2=Employee('sudha',1995,20000,'Male','velur') 
+Employee.current_salary(30200) print(emp1.sal)
+data = 'sanjay,2001,20300,Male,Trichy' 
+emp3= Employee.emp_data(data) 
+print(emp3.dob)
